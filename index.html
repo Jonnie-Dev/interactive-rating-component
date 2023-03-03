@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
     <link
       rel="icon"
       type="image/png"
@@ -15,23 +19,24 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
-  
+
   <body class="bg-bg-dark2 text-color-text">
     <main class="flex justify-center items-center h-[80vh]">
       <div class="max-w-sm bg-bg-dark rounded-2xl p-8">
-        <img class="bg-bg-light2/20 p-2 rounded-full inline-block w-7" src="./images/icon-star.svg" alt="star icon" />
+        <img class="bg-bg-light2/20 p-2 rounded-full inline-block w-7 h-7" src="./images/icon-star.svg" alt="star icon" />
         <h1 class="my-4 text-2xl font-bold">How did we do?</h1>
-        <p class="text-[15px] text-bg-light2">
+        <p class="text-sm text-bg-light2">
           Please let us know how we did with your support request. All feedback is
           appreciated to help us improve our offering!
         </p>
-        <div class="rating-div flex m-8 justify-between text-center [&>*]:bg-bg-dark/30">
-          <p class="rating rating-1">1</p>
-          <p class="rating rating-2">2</p>
-          <p class="rating rating-3">3</p>
-          <p class="rating rating-4">4</p>
-          <p class="rating rating-5">5</p>
+        <div class="rating-div flex my-6 justify-between text-center [&>*]:bg-bg-light/20 [&>*]:text-color-text/50  [&>*]:py-2 [&>*]:px-4 [&>*]:rounded-full [&>*]:cursor-pointer hover:[&>*]:bg-bg-light">
+          <span class="rating rating-1">1</span>
+          <span class="rating rating-2">2</span>
+          <span class="rating rating-3">3</span>
+          <span class="rating rating-4">4</span>
+          <span class="rating rating-5">5</span>
         </div>
+        <button class="bg-color-accent w-full rounded-3xl py-2 text-xs tracking-widest hover:bg-color-text hover:text-color-accent">SUBMIT</button>
       </div>
     </main>
 
@@ -52,7 +57,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://www.github.com/Jonnie-Dev">JonnieDev</a>.
+      >. Coded by <a href="https://www.github.com/Jonnie-Dev">JonnieDev</a>
     </div>
 
     <script src="./src/index.js" type="module"></script>
