@@ -40,5 +40,5 @@ Users should be able to:
 ## Author
 
 - Website - [JonnieDev](https://www.jon-nie.vercel.app)
-- Frontend Mentor - [@JonnieDev](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@JonnieDev](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@JonnieDev](https://www.frontendmentor.io/profile/Johnnyteck)
+- Twitter - [@JonnieDev](https://www.twitter.com/Jonnie-Dev)
