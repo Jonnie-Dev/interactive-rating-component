@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-rating-component-h40YK5iedU)
-- Live Site URL: [Add live site URL here](https://interactive-rating-component-green-psi.vercel.app/)
+- Solution URL: [www.frontendmentor.io/solution](https://www.frontendmentor.io/solutions/interactive-rating-component-h40YK5iedU)
+- Live Site URL: [https://interactive-rating-component.vercel.app/](https://interactive-rating-component-green-psi.vercel.app/)
 
 ### Built with
 
