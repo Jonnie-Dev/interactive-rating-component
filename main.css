@@ -612,10 +612,6 @@ video {
   max-width: 24rem;
 }
 
-.animate-ease {
-  animation: all 3s ease-in;
-}
-
 .items-center {
   align-items: center;
 }
@@ -730,8 +726,12 @@ video {
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -744,12 +744,62 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-300 {
   transition-delay: 300ms;
 }
 
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
+.delay-\[5000\] {
+  transition-delay: 5000;
+}
+
+.delay-\[300\] {
+  transition-delay: 300;
+}
+
+.delay-\[500\] {
+  transition-delay: 500;
+}
+
+.delay-\[500ms\] {
+  transition-delay: 500ms;
+}
+
+.delay-\[300ms\] {
+  transition-delay: 300ms;
+}
+
+.delay-\[200ms\] {
+  transition-delay: 200ms;
+}
+
+.delay-\[400ms\] {
+  transition-delay: 400ms;
+}
+
+.delay-\[2000ms\] {
+  transition-delay: 2000ms;
+}
+
+.delay-\[150ms\] {
+  transition-delay: 150ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -807,10 +857,6 @@ The designs were created to the following widths:
 .hover\:text-color-accent:hover {
   --tw-text-opacity: 1;
   color: hsl(25 97% 53% / var(--tw-text-opacity));
-}
-
-.\[\&\>\*\]\:animate-ease>* {
-  animation: all 3s ease-in;
 }
 
 .\[\&\>\*\]\:cursor-pointer>* {

@@ -21,39 +21,26 @@
   </head>
 
   <body class="bg-bg-dark2 text-color-text">
-    <main id="main" class=" flex m-4 justify-center items-center h-[90vh] am">
+    <main id="main" class="flex m-4 justify-center items-center h-[90vh] am">
       <div id="container" class="max-w-sm bg-bg-dark rounded-2xl p-8">
-        <img class="bg-bg-light2/20 p-2 rounded-full inline-block w-7 h-7" src="./images/icon-star.svg" alt="star icon" />
-        <h1 class="my-4 text-2xl font-bold">How did we do?</h1>
-        <p class="text-sm text-fluid-p text-bg-light2">
-          Please let us know how we did with your support request. All feedback is
-          appreciated to help us improve our offering!
-        </p>
-        <div class="rating-div flex my-6 justify-between text-center [&>*]:text-color-text/75  [&>*]:py-2 [&>*]:px-4 [&>*]:rounded-full [&>*]:cursor-pointer hover:[&>*]:bg-bg-light [&>*]:transition-all">
-          <span class="rating rating-1 bg-bg-light/20">1</span>
-          <span class="rating rating-2 bg-bg-light/20">2</span>
-          <span class="rating rating-3 bg-bg-light/20">3</span>
-          <span class="rating rating-4 bg-bg-light/20">4</span>
-          <span class="rating rating-5 bg-bg-light/20">5</span>
+        <div id="dom-div">
+          <img class="bg-bg-light2/20 p-2 rounded-full inline-block w-7 h-7" src="./images/icon-star.svg" alt="star icon" />
+          <h1 class="my-4 text-2xl font-bold">How did we do?</h1>
+          <p class="text-sm text-fluid-p text-bg-light2">
+            Please let us know how we did with your support request. All feedback is
+            appreciated to help us improve our offering!
+          </p>
+          <div class="rating-div flex my-6 justify-between text-center [&>*]:text-color-text/75  [&>*]:py-2 [&>*]:px-4 [&>*]:rounded-full [&>*]:cursor-pointer hover:[&>*]:bg-bg-light [&>*]:transition-all">
+            <span class="rating rating-1 bg-bg-light/20">1</span>
+            <span class="rating rating-2 bg-bg-light/20">2</span>
+            <span class="rating rating-3 bg-bg-light/20">3</span>
+            <span class="rating rating-4 bg-bg-light/20">4</span>
+            <span class="rating rating-5 bg-bg-light/20">5</span>
+          </div>
+          <button class="bg-color-accent w-full rounded-3xl py-2 text-xs tracking-widest hover:bg-color-text hover:text-color-accent" id="submit">SUBMIT</button>
         </div>
-        <button class="bg-color-accent w-full rounded-3xl py-2 text-xs tracking-widest hover:bg-color-text hover:text-color-accent" id="submit">SUBMIT</button>
       </div>
     </main>   
-
-    <div id="thank-you" class="hidden">
-      <div class="text-center">
-        <img class="mx-auto mb-4"
-          src="./images/illustration-thank-you.svg"
-          alt="thank you illustration"
-        />
-        <p class="mx-auto my-8 text-color-accent/70 bg-bg-light/10 w-fit py-2 px-4  rounded-2xl text-sm">You selected ${id} out of 5</p>
-        <h2 class="text-2xl font-bold mb-4">Thank you!</h2>
-        <p class="text-bg-light2 text-sm text-fluid-p">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
-      </div>
-    </div>
 
     <div class="attribution">
       Challenge by
