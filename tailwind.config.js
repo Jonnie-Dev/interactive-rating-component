@@ -14,9 +14,6 @@ module.exports = {
         'bg-dark': 'hsl(213, 19%, 18%)',
         'bg-dark2': 'hsl(216, 12%, 8%)',
       },
-      animation: {
-        'ease': 'all 3s ease-in',
-      }
     },
   },
   

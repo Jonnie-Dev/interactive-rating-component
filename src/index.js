@@ -1,10 +1,8 @@
 const rating = document.querySelectorAll(".rating")
 const button = document.querySelector("#submit")
-const main = document.querySelector("#main")
-const divContainer = document.querySelector("#container")
 const domDiv = document.querySelector("#dom-div")
 
-let id = 0;
+let id;
 
 rating.forEach(score => {  
     score.addEventListener("click", clicked)
@@ -34,7 +32,7 @@ function submit() {
             src="./images/illustration-thank-you.svg"
             alt="thank you illustration"
             />
-            <p class="mx-auto my-8 text-color-accent/70 bg-bg-light/10 w-fit py-2 px-4  rounded-2xl text-sm">You selected ${id} out of 5</p>
+            <p class="mx-auto my-8 text-color-accent/60 bg-bg-light/10 w-fit py-2 px-4 font -bold rounded-2xl text-sm">You selected ${id} out of 5</p>
             <h2 class="text-2xl font-bold mb-4">Thank you!</h2>
             <p class="text-bg-light2 text-sm text-fluid-p">
             We appreciate you taking the time to give a rating. If you ever need
@@ -42,12 +40,9 @@ function submit() {
             </p>
         </div>
     `
-    domDiv.innerHTML = thankYouText
-
-    const thankYou = document.getElementById("thank-you")
-    
+    domDiv.innerHTML = thankYouText    
     domDiv.style.opacity = "1"
 
     domDiv.classList.add("transition","ease-in","delay-[150ms]")
 }
-// submit()
+
