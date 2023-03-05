@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
-.attribution { 
-    font-size: 11px; text-align: center;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
 
-.attribution a { 
-    color: hsl(25, 97%, 53%);
+.attribution a {
+  color: hsl(25, 97%, 53%);
 }

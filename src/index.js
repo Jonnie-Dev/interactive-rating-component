@@ -1,32 +1,32 @@
-const rating = document.querySelectorAll(".rating")
-const button = document.querySelector("#submit")
-const domDiv = document.querySelector("#dom-div")
+const rating = document.querySelectorAll(".rating");
+const button = document.querySelector("#submit");
+const domDiv = document.querySelector("#dom-div");
 
 let id;
 
-rating.forEach(score => {  
-    score.addEventListener("click", clicked)
-})
+rating.forEach((score) => {
+  score.addEventListener("click", clicked);
+});
 
-function clicked(e){
-    id = +e.target.textContent;
+function clicked(e) {
+  id = +e.target.textContent;
 
-    rating.forEach(function(s) {
-        s.classList.remove('bg-color-accent');
-        s.classList.add('bg-bg-light/20');
-    });
+  rating.forEach(function (s) {
+    s.classList.remove("bg-color-accent");
+    s.classList.add("bg-bg-light/20");
+  });
 
-    for (let i = 0; i < id; i++) {
-        rating[i].classList.add('bg-color-accent');
-        rating[i].classList.remove('bg-bg-light/20')
-    }
+  for (let i = 0; i < id; i++) {
+    rating[i].classList.add("bg-color-accent");
+    rating[i].classList.remove("bg-bg-light/20");
+  }
 
-    button.addEventListener("click", submit)
+  button.addEventListener("click", submit);
 }
 
 function submit() {
-    domDiv.style.opacity = "0"
-    let thankYouText = `
+  domDiv.style.opacity = "0";
+  let thankYouText = `
         <div id="thank-you" class="text-center">
             <img class="mx-auto mb-4"
             src="./images/illustration-thank-you.svg"
@@ -39,10 +39,9 @@ function submit() {
             more support, don’t hesitate to get in touch!
             </p>
         </div>
-    `
-    domDiv.innerHTML = thankYouText    
-    domDiv.style.opacity = "1"
+    `;
+  domDiv.innerHTML = thankYouText;
+  domDiv.style.opacity = "1";
 
-    domDiv.classList.add("transition","ease-in","delay-[150ms]")
+  domDiv.classList.add("transition", "ease-in", "delay-[150ms]");
 }
-
